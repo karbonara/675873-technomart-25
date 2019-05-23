@@ -32,9 +32,19 @@ img {
 .logo:focus {
    background-color: #ca2c37;
 }
+.form-nav input{
+   border: none;
+   background-color: #293449;
+   
+}
+.form-nav input:hover,
+.form-nav input:focus {
+   background-color: #212a3a;
+}
 .search {
   font-size: 17px;
   line-height: 18px;
+   
 }
 .nav-main {
    background-color: #293449;
@@ -153,6 +163,14 @@ img {
 .brand-items {
   list-style: none;
 }
+.brand-item a:hover,
+.brand-item a:focus {
+   opacity: 0.5;
+   
+}
+.info-class {
+   list-style: none;
+}
 .cp {
   font-size: 30px;
   line-height: 30px;
@@ -184,6 +202,10 @@ img {
 .container-footer {
    background-color: #32425c;
 }
+.services-footer a:hover,
+.services-footer a:focus {
+   text-decoration: underline;
+}
 .services-footer a {
    color: #ffffff;
 }
@@ -191,6 +213,11 @@ img {
   font-size: 18px;
   line-height: 24px;
   list-style: none;
+}
+.materials-footer a:hover,
+.materials-footer a:focus {
+ text-decoration: underline;
+	
 }
 .materials-footer li {
   list-style: none;
@@ -213,6 +240,10 @@ img {
 .social {
    list-style: none;
 }
+.mail-footer:hover,
+.mail-footer:focus {
+   text-decoration: underline;
+}
 .connection {
   font-size: 16px;
   line-height: 18px;
@@ -226,6 +257,11 @@ img {
   line-height: 18px;
    color: #ffffff;
 }
+.cite-class:hover,
+.cite-class:focus {
+   text-decoration: underline;
+}
+
 .developed a {
   color: #ffd180;
 }
@@ -251,7 +287,11 @@ img {
 .login li {
   list-style: none;
 }
+.catalog a {
+   color: #000000;
+}
 .catalog {
+   
   font-size: 16px;
   line-height: 18px;
   list-style: none;
