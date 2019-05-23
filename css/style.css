@@ -1,0 +1,311 @@
+body, html {
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.logo {
+   background-color: #ee3643;
+}
+.logo:hover,
+.logo:focus {
+   background-color: #ca2c37;
+}
+.search {
+  font-size: 17px;
+  line-height: 18px;
+}
+.nav-main {
+   background-color: #293449;
+   
+}
+.cart-nav a:hover,
+.cart-nav a:focus {
+   background-color: #212a3a;
+   
+}
+.nav-main a {
+  font-size: 17px;
+  line-height: 18px;
+   color: #ffffff;
+}
+.info-main h1 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+.adress-main {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+.number-main {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+.login-main a:hover,
+.login-main a:focus {
+   color: #ee3643;
+}
+.login-main a {
+   color: #000000;
+}
+.login-main {
+  font-size: 21px;
+  line-height: 21px;
+   list-style: none;
+}
+.services-main a{
+   color: #ffffff;
+}
+.services-main a:hover,
+.services-main a:focus {
+   background-color: #293449;
+}
+
+.services-main {
+  font-size: 17px;
+  line-height: 17px;
+   background-color: #32425c;
+   color: #ffffff;
+}
+.services-main li {
+  list-style: none;
+}
+.services-item {
+   list-style: none;
+}
+.services-items p {
+  font-size: 24px;
+  line-height: 30px;
+   
+}
+.services-items a {
+  font-size: 14px;
+  line-height: 18px;
+   
+}
+.name-item {
+  font-size: 36px;
+  line-height: 36px;
+}
+.description-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+.btn:hover,
+.btn:focus {
+   background-color: #ca2c37;
+}
+.btn {
+   background-color: #ee3643;
+   color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+}
+.popular-item {
+   background-color: #f9f5f0;
+}
+.popular {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+.product-items {
+  list-style: none;
+}
+.product-items a {
+   font-size: 18px;
+   line-height: 20px;
+   color: #000000;
+}
+.product-items p {
+  font-size: 17px;
+  line-height: 18px;
+}
+.product-items del {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+.brand-items {
+  list-style: none;
+}
+.cp {
+  font-size: 30px;
+  line-height: 30px;
+}
+.company-main {
+  font-size: 13px;
+  line-height: 24px;
+}
+.company-item {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+.contacts-main {
+  font-size: 13px;
+  line-height: 24px;
+}
+.contacts {
+  font-size: 30px;
+  line-height: 30px;
+}
+.logo-footer p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.logo-footer p{
+   color: #ffffff;
+}
+.container-footer {
+   background-color: #32425c;
+}
+.services-footer a {
+   color: #ffffff;
+}
+.services-footer {
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+.materials-footer li {
+  list-style: none;
+}
+.materials-footer a {
+  color: #ffd180;
+}
+.nav-footer {
+  font-size: 18px;
+  line-height: 24px;
+}
+.info-footer {
+   background-color: #293449;
+}
+.comp-footer {
+  font-size: 16px;
+  line-height: 18px;
+   color: #ffffff;
+}
+.social {
+   list-style: none;
+}
+.connection {
+  font-size: 16px;
+  line-height: 18px;
+   color: #ffffff;
+}
+.connection a {
+  color: #ffd180;
+}
+.developed {
+  font-size: 16px;
+  line-height: 18px;
+   color: #ffffff;
+}
+.developed a {
+  color: #ffd180;
+}
+.basket {
+   background-color: #ee3643;
+   color: #ffffff;
+}
+.order {
+   background-color: #63a63e;
+}
+.login {
+  font-size: 16px;
+  line-height: 18px;
+}
+.login a {
+  color: #32425c;
+}
+.login a:hover,
+.login a:focus {
+   
+   color: #ee3643;
+}
+.login li {
+  list-style: none;
+}
+.catalog {
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+.perforator-main {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+   background-color: #f2f6f8;
+}
+.filter-input {
+   font-size: 2px;
+}
+.filter-form {
+  font-size: 13px;
+  line-height: 18px;
+}
+.filters-form legend {
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter fieldset {
+  border: none;
+}
+.filters-form label {
+  font-size: 15px;
+  line-height: 20px;
+}
+.filters-form li {
+  list-style: none;
+   line-height: 20px;
+   
+}
+.btn-filter {
+   border: none;
+   font-size: 13px;
+   line-height: 18px;
+   background-color: #ffffff;
+   
+}
+.pages {
+  font-size: 13px;
+  
+  line-height: 18px;
+}
+.pages li {
+  list-style: none;
+}
+.information {
+  font-size: 30px;
+  line-height: 30px;
+}
+.information-main {
+  font-size: 13px;
+  line-height: 24px;
+   background-color: #f2f6f8;
+}
