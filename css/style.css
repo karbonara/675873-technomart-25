@@ -1,10 +1,10 @@
 body, html {
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   background-color: #ffffff;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  
 }
 a {
   text-decoration: none;
@@ -33,20 +33,25 @@ img {
    background-color: #ca2c37;
 }
 .form-nav input{
+   
    border: none;
    background-color: #293449;
    
 }
+
 .form-nav input:hover,
 .form-nav input:focus {
    background-color: #212a3a;
+   color: #ffffff;
 }
 .search {
+   
   font-size: 17px;
   line-height: 18px;
    
 }
 .nav-main {
+   
    background-color: #293449;
    
 }
@@ -64,6 +69,7 @@ img {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+   font-style: italic;
 }
 .adress-main {
   font-size: 14px;
@@ -109,6 +115,7 @@ img {
 }
 .services-items p {
   font-size: 24px;
+   font-weight: bold;
   line-height: 30px;
    
 }
@@ -139,6 +146,7 @@ img {
    background-color: #ba2732;
 }
 .btn {
+   border: none;
    font: inherit;
    text-transform: uppercase;
    background-color: #ee3643;
@@ -151,6 +159,7 @@ img {
    background-color: #f9f5f0;
 }
 .popular {
+   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -160,6 +169,7 @@ img {
   list-style: none;
 }
 .product-items a {
+   font-weight: bold;
    font-size: 18px;
    line-height: 20px;
    color: #000000;
@@ -185,11 +195,31 @@ img {
    opacity: 0.5;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+.services-info-main {
+   font-size: 13px;
+   line-height: 24px;
+   font-family: 'PT Sans', sans-serif;
+}
+.services {
+   font-size: 30px;
+   line-height: 30px;
+   font-family: 'PT Sans', sans-serif;
+}
 .info-class {
    list-style: none;
 }
-.cp {
+.delivery-info {
+   font-size: 36px;
+   line-height: 36px;
+   font-family: 'PT Sans', sans-serif;
+}
+
+.delivery-info-main {
+   line-height: 24px;
+   font-size: 13px;
+   font-family: 'PT Sans', sans-serif;
+}
+.company-info{
   font-size: 30px;
   line-height: 30px;
    text-transform: uppercase;
@@ -217,7 +247,7 @@ img {
   line-height: 24px;
 }
 .logo-footer p{
-   color: #ffffff;
+   color: #f3f7f9;
 }
 .container-footer {
    background-color: #32425c;
@@ -230,7 +260,7 @@ img {
    opacity: 0.5;
 }
 .services-footer a {
-   color: #ffffff;
+   color: #f3f7f9;
 }
 .services-footer {
   font-size: 18px;
@@ -263,7 +293,8 @@ img {
   line-height: 18px;
    color: #ffffff;
 }
-.social {
+.social{
+
    list-style: none;
 }
 .mail-footer:hover,
@@ -343,6 +374,8 @@ img {
   line-height: 18px;
 }
 .filters-form legend {
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
 }
@@ -350,6 +383,7 @@ img {
   border: none;
 }
 .filters-form label {
+   font-family: 'PT Sans', sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
@@ -364,6 +398,7 @@ img {
    line-height: 18px;
    background-color: #ffffff;
    text-transform: uppercase;
+   font-family: 'PT Sans', sans-serif;
    
 }
 .pages {
@@ -371,7 +406,9 @@ img {
   list-style: none;
   line-height: 18px;
 }
-
+.information-info {
+   font-family: 'PT Sans', sans-serif;
+}
 .information {
   font-size: 30px;
   line-height: 30px;
@@ -380,4 +417,20 @@ img {
   font-size: 13px;
   line-height: 24px;
    background-color: #f2f6f8;
+}
+.modal-login {
+   font-size: 18px;
+   line-height: 18px;
+}
+.modal-basket p{
+   font-size: 30px;
+   line-height: 30px;
+}
+.btn-basket {
+   color: #000000;
+   font-size: 14px;
+   line-height: 18px;
+   border: none;
+   background-color: #ffffff;
+   text-transform: uppercase;
 }
