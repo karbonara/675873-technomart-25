@@ -67,12 +67,12 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-main {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
    padding-right: 10px;
-   height: 42px;
+   min-height: 42px;
    display: flex;
    align-items: center;
    background-color: #293449;
@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-main {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
@@ -161,19 +161,26 @@ input[type="radio"].visually-hidden {
    background-color: #293449;
 }
 
-.sm {
+.services-items-main {
+   align-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   
+  
    display: flex;
    justify-content: space-between;
-   height: 60px;
+   
 }
 
-.it {
+.service2 {
    display: flex;
 
 }
 
 .services-main {
-   width: 960px;
+   width: 940px;
+   min-height: 60px;
    margin-left: auto;
    margin-right: auto;
    font-size: 17px;
@@ -187,12 +194,16 @@ input[type="radio"].visually-hidden {
 }
 
 .service {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 
 .services-item {
+   padding-left: 0;
+   margin: 0;
    display: flex;
    list-style: none;
 }
@@ -211,6 +222,7 @@ input[type="radio"].visually-hidden {
 .services-items {
    width: 300px;
    margin-left: 21px;
+   
    height: 123px;
    background-color: red;
 }
@@ -231,7 +243,7 @@ input[type="radio"].visually-hidden {
 
 .items3 {
    background-color: #dc91d8;
-}
+}ясно
 
 .items4 {
    background-color: #8ed78f;
@@ -243,17 +255,27 @@ input[type="radio"].visually-hidden {
 
 .slider-items {
    list-style: none;
+   position: relative;
 
+}
+.slider-container {
+   top: -25px;
+   left: 21px;
+   position: absolute;
+   
+   
 }
 
 .name-item {
    font-size: 36px;
    line-height: 36px;
+   color: #ffffff;
 }
 
 .description-item {
    font-size: 18px;
    line-height: 24px;
+   color: #ffffff;
 }
 
 .btn:hover,
@@ -319,8 +341,7 @@ input[type="radio"].visually-hidden {
 }
 
 .brand-item {
-   padding-left: 10px;
-   padding-right: 10px;
+   
    justify-content: space-between;
    flex-wrap: wrap;
    display: flex;
@@ -358,7 +379,7 @@ input[type="radio"].visually-hidden {
 
 .services-info {
 
-   width: 960px;
+   width: 940px;
    background-color: #f4f7f9;
    margin-left: auto;
    margin-right: auto;
@@ -377,7 +398,7 @@ input[type="radio"].visually-hidden {
    list-style: none;
 }
 
-.di {
+.delivery-wrapper {
    width: 290px;
    display: block;
 }
@@ -400,7 +421,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contact {
-   width: 960px;
+   width: 940px;
    padding-left: 10px;
    padding-right: 10px;
    margin-left: auto;
@@ -446,12 +467,12 @@ input[type="radio"].visually-hidden {
 }
 
 .container-footer-main {
-   width: 100%;
+   
    background-color: #32425c;
 }
 
 .container-footer {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
@@ -512,12 +533,12 @@ input[type="radio"].visually-hidden {
 }
 
 .info-footer-main {
-   width: 100%;
+   
    background-color: #293449;
 }
 
 .info-footer {
-   width: 960px;
+   width: 940px;
    display: flex;
    justify-content: space-between;
    margin-left: auto;
@@ -609,7 +630,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-main {
-   width: 960px;
+   width: 940px;
+   padding-left: 10px;
+   padding-right: 10px;
    margin-left: auto;
    margin-right: auto;
 
@@ -625,6 +648,7 @@ input[type="radio"].visually-hidden {
 
 .catalog {
    display: flex;
+   padding-right: 10px;
    padding-left: 60px;
    text-transform: uppercase;
    font-size: 16px;
@@ -633,10 +657,11 @@ input[type="radio"].visually-hidden {
 }
 
 .perforator-main {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
+   padding-right: 10px;
    font-size: 30px;
    line-height: 30px;
    font-weight: 400;
@@ -668,7 +693,7 @@ input[type="radio"].visually-hidden {
 }
 
 .items-main {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
@@ -740,7 +765,7 @@ input[type="radio"].visually-hidden {
 }
 
 .information-main {
-   width: 960px;
+   width: 940px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 10px;
