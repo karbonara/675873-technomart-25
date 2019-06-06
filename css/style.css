@@ -352,7 +352,8 @@ input[type="radio"].visually-hidden {
    text-transform: uppercase;
    color: #ffffff;
 
-   background-color: #e5e5e5;
+   background: rgba( 0, 0, 0, 0.1);
+   padding: 5px 17px;
    border-radius: 3px;
 }
 
@@ -532,15 +533,7 @@ input[type="radio"].visually-hidden {
    text-transform: uppercase;
 }
 
-.product-items {
-   margin-bottom: 10px;
-   width: 220px;
-   list-style: none;
-}
-.product-items:hover,
-.product-items:focus{
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+
 .product-item {
    width: 700px;
    padding: 0;
@@ -548,35 +541,15 @@ input[type="radio"].visually-hidden {
    justify-content: space-between;
    flex-wrap: wrap;
 }
-.product-item1 {
-   width: 940px;
-   padding: 0;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
 
-.product-items a {
-   font-weight: bold;
-   font-size: 18px;
-   line-height: 20px;
-   color: #000000;
-}
 
-.product-items p {
-   font-size: 17px;
-   line-height: 18px;
-}
 
-.product-items del {
-   font-size: 17px;
-   line-height: 18px;
-   color: #a9a9a9;
-}
+
+
 
 .brand-item {
    margin-top: 16px;
-   padding: 0;
+   
    padding: 0;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -585,19 +558,20 @@ input[type="radio"].visually-hidden {
    
 }
 
-.brand-items {
-   
-   margin-bottom: 10px;
-   border: 1px solid #ebebeb;
-/*   height: 145px;*/
-   
-   padding: 11px 0px;
-   width: 220px;
-   text-align: center;
-   
+.brand-item {
    list-style: none;
 }
-
+.brand-items {
+    
+   
+   margin-bottom: 10px;
+   width: 220px;
+   display: flex;
+  padding: 32px 3px;
+  
+   
+   border: 1px solid #eaeaea;
+}
 .brand-items:hover {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -663,6 +637,11 @@ input[type="radio"].visually-hidden {
    color: #ffffff;
    background-color: #32425c;
    
+}
+
+.info-class li:focus,
+.info-class li:hover {
+   background-color: #293449;
 }
 
 .delivery-wrapper {
@@ -1026,8 +1005,8 @@ input[type="radio"].visually-hidden {
 .price {
    width: 700px;
    margin-left: 19px;
-   min-height: 51px;
-align-items: center;
+   
+   align-items: center;
    display: flex;
    background-color: #f7f3ec;
 }
