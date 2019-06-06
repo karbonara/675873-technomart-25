@@ -16,8 +16,10 @@
             <form class="form-nav">
                <input class="search" placeholder="Поиск:" type="search">
             </form>
-            <div>
-               <a href="#">Закладки:0</a> <a class="basket" href="#">Корзина:10</a> <a class="order" href="#">Оформить заказ</a>
+            <div class="cart-nav">
+               <a href="#">Закладки:0</a>
+               <a class="basket" href="#">Корзина:10</a>
+               <a class="order" href="#">Оформить заказ</a>
             </div>
 
          </nav>
@@ -84,7 +86,9 @@
             </li>
          </ul>
       </section>
-      <h2 class="perforator-main">Перфораторы</h2>
+      <div class="perforator-main-info">
+         <h2 class="perforator-main">Перфораторы</h2>
+      </div>
 
       <div class="items-main">
          <section class="filters-form">
@@ -103,8 +107,13 @@
                <fieldset>
                   <legend>Питание:</legend>
                   <ul class="filter-item">
-                     <li><input class="visually-hidden" checked id="filter-battery" name="product-group" type="radio" value="batterys"> <label for="filter-battery">Аккумуляторные</label></li>
-                     <li><input class="visually-hidden" id="filter-network" name="product-group" type="radio" value="networks"> <label for="filter-network">Сетевые</label></li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" checked id="filter-battery" name="product-group" type="radio" value="batterys">
+                        <label for="filter-battery">Аккумуляторные</label>
+                     </li>
+                     <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" id="filter-network" name="product-group" type="radio" value="networks"> <label for="filter-network">Сетевые</label>
+                     </li>
                   </ul>
                </fieldset><button class="btn-filter" type="submit">Показать</button>
             </form>
@@ -124,16 +133,16 @@
                      <a href="#">По функционалу</a>
                   </li>
                </ul>
-               <div class="icon">
-                  <ul class="icon-items">
-                     <li>
-                        <a href="#"></a>
-                     </li>
-                     <li>
-                        <a href="#"></a>
-                     </li>
-                  </ul>
-               </div>
+
+               <ul class="icon-items">
+                  <li>
+                     <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="up"></a>
+                  </li>
+                  <li>
+                     <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="up"></a>
+                  </li>
+               </ul>
+
             </div>
             <ul class="product-item">
                <li class="product-items">
@@ -173,17 +182,20 @@
                   <p>12500 р.</p>
                </li>
             </ul>
+            
+            
+            
             <ul class="pages">
-               <li>
+               <li class="pages-items">
                   <a>1</a>
                </li>
-               <li>
+               <li class="pages-items">
                   <a href="#">2</a>
                </li>
-               <li>
+               <li class="pages-items">
                   <a href="#">3</a>
                </li>
-               <li>
+               <li class="pages-items page">
                   <a href="#">Следующая</a>
                </li>
             </ul>
@@ -204,8 +216,8 @@
          <div class="container-footer ">
             <div class="logo-footer">
                <a class="logo" href="index.html"><img alt="Техномарт" height="18" src="img/logo-technomart.svg" width="110"></a>
-               <p>г. Санкт-Петербург, ул. Б. Конюшенная, <br>
-                  д. 19/8 +7 (812) 555-05-55</p>
+               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+                  +7 (812) 555-05-55</p>
             </div>
             <nav class="nav-footer">
                <ul class="services-footer">
@@ -266,16 +278,16 @@
             <p class="connection"><b>Обратная связь:</b>
                <a class="mail-footer" href="#">mail@htmlacademy.ru</a>
             </p>
-            
-               <p class="developed"><b>Разработано —</b>
+
+            <p class="developed"><b>Разработано —</b>
                <a class="cite-class" href="https://htmlacademy.ru">htmlacademy.ru</a>
             </p>
-            
+
          </div>
       </div>
 
    </footer>
-   <section class="modal modal-basket visually-hidden">
+   <section class="modal modal-basket">
       <h2 class="visually-hidden">Форма корзины</h2>
       <p>Товар добавлен в корзину!</p><a class="btn" href="#">Оформить заказ</a> <a class="btn-basket" href="#">Продолжить покупки</a>
       <button class="modal-close visually-hidden" type="button">Закрыть</button>
