@@ -194,6 +194,9 @@ input[type="search"]::placeholder {
    margin-bottom: 25px;
    
    justify-content: space-between;
+   
+   
+   align-items: center;
 }
 .info-main h1 {
    width: 300px;
@@ -245,16 +248,25 @@ input[type="search"]::placeholder {
 .register {
    width: 300px;
    display: flex;
+  justify-content: space-between;
+   padding: 0;
  }
 .register li {
-   width: 100px;
+   
+   font-size: 21px;
+   line-height: 21px;
+   width: 115px;
    display: flex;
-   padding: 10px 10px;
+   
    justify-content: center;
-   margin-right: 10px;
+   
+   padding: 11px 10px;
+   
+
    background-color: white;
    
 }
+
 /*
 .login-main a:hover, .login-main a:focus {
    color: #ee3643;
