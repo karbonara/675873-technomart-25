@@ -29,13 +29,13 @@ img {
    justify-content: center;
    text-align: center;
    display: flex;
-   width: 217px;
+   width: 221px;
    height: 46px;
    background-color: #ee3643;
    border-bottom: 5px solid #b52933;
 }
 .logo img{
-   padding-top: 11px;
+   padding-top: 16px;
    width: 110px;
    height: 18px;
 }
@@ -190,16 +190,17 @@ input[type="search"]::placeholder {
    padding-left: 10px;
    padding-right: 10px;
    display: flex;
-   padding-top: 40px;
+   padding-top: 46px;
    margin-bottom: 25px;
    
    justify-content: space-between;
    
    
-   align-items: center;
+   align-items: start;
 }
 .info-main h1 {
    width: 300px;
+   margin: 0;
    font-size: 16px;
    line-height: 23px;
    color: #ee3643;
@@ -212,7 +213,7 @@ input[type="search"]::placeholder {
    width: 300px;
 }
 .adress-main {
-   
+   margin: 0;
    
    font-size: 14px;
    line-height: 24px;
@@ -224,6 +225,7 @@ input[type="search"]::placeholder {
    padding: 0;
 }
 .number-main {
+   margin: 0;
    position: relative;
    display: flex;
    align-items: center;
@@ -247,6 +249,7 @@ input[type="search"]::placeholder {
 }
 .register {
    width: 300px;
+   margin: 0;
    display: flex;
   justify-content: space-between;
    padding: 0;
@@ -868,7 +871,7 @@ input[type="search"]::placeholder {
 }
 .btn-map {
    display: flex;
-   width: 188px;
+   width: 180px;
    padding: 11px 58px;
    border: none;
    font: inherit;
@@ -1120,6 +1123,7 @@ input[type="search"]::placeholder {
 .perforator-main {
    padding-top: 30px;
    padding-bottom: 30px;
+   padding-left: 25px;
    font-family: 'Cuprum', Arial, sans-serif;
    font-size: 30px;
    line-height: 30px;
@@ -1216,6 +1220,7 @@ input[type="search"]::placeholder {
    width: 220px;
 }
 .filters-form legend {
+   text-transform: uppercase;
    font-family: 'PT Sans', Arial, sans-serif;
    font-weight: bold;
    font-size: 17px;
