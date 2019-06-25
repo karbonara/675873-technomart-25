@@ -34,7 +34,7 @@ img {
    background-color: #ee3643;
    border-bottom: 5px solid #b52933;
 }
-.logo img{
+.logo img {
    padding-top: 16px;
    width: 110px;
    height: 18px;
@@ -89,19 +89,31 @@ img {
    opacity: 0.4;
 }
 */
+
 .search {
    margin-left: -39px;
    width: 270px;
    display: flex;
+   position: relative;
 }
-
-   
-input[type="search"]::placeholder { 
+input[type='search']::placeholder {
    color: #fff;
    font-size: 17px;
-} 
-
+}
+.search::after {
+   content: '';
+   position: absolute;
+   top: 12px;
+   left: 15px;
+   width: 19px;
+   height: 20px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-image: url('../img/icon-search.svg');
+   opacity: 0.4;
+}
 .search input {
+   position: relative;
    border: none;
    width: 270px;
    padding-top: 0px;
@@ -110,34 +122,36 @@ input[type="search"]::placeholder {
    font-size: 17px;
    background-color: #293449;
    position: relative;
-   
 }
-
 .bookmark-item {
+   box-sizing: border-box;
+   padding-left: 19px;
    position: relative;
 }
 .bookmark-item::after {
    content: '';
    position: absolute;
-   top: 13px;
-   left: -13px;
-   width: 52px;
-   height: 80px;
+   top: 11px;
+   left: 19px;
+   width: 15px;
+   height: 15px;
    background-repeat: no-repeat;
    background-position: 0 0;
    background-image: url('../img/icon-bookmark.svg');
    opacity: 0.4;
 }
 .cart {
+   box-sizing: border-box;
+   padding-left: 20px;
    position: relative;
 }
 .cart::after {
    content: '';
    position: absolute;
-   top: 18px;
-   left: -8px;
-   width: 52px;
-   height: 80px;
+   top: 12px;
+   left: 20px;
+   width: 15px;
+   height: 15px;
    background-repeat: no-repeat;
    background-position: 0 0;
    background-image: url('../img/icon-cart.svg');
@@ -179,6 +193,7 @@ input[type="search"]::placeholder {
    background-color: #212a3a;
 }
 .nav-main a {
+   font-weight: 400;
    font-size: 17px;
    line-height: 18px;
    color: #ffffff;
@@ -191,30 +206,28 @@ input[type="search"]::placeholder {
    padding-right: 10px;
    display: flex;
    padding-top: 46px;
-   margin-bottom: 25px;
-   
+   margin-bottom: 40px;
    justify-content: space-between;
-   
-   
    align-items: start;
 }
 .info-main h1 {
    width: 300px;
    margin: 0;
+   box-sizing: border-box;
+   padding-top: 2px;
+   padding-left: 51px;
+   padding-right: 32px;
    font-size: 16px;
    line-height: 23px;
    color: #ee3643;
    font-style: italic;
 }
-
 .adress {
-   
-   
    width: 300px;
 }
 .adress-main {
    margin: 0;
-   
+   padding-left: 7px;
    font-size: 14px;
    line-height: 24px;
    color: #32425c;
@@ -226,14 +239,15 @@ input[type="search"]::placeholder {
 }
 .number-main {
    margin: 0;
+   padding-left: 11px;
+   margin-bottom: 3px;
    position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
-   
    text-align: center;
    width: 259px;
-   height: 45px;
+   height: 40px;
    font-size: 21px;
    line-height: 21px;
    color: #ee3643;
@@ -251,25 +265,38 @@ input[type="search"]::placeholder {
    width: 300px;
    margin: 0;
    display: flex;
-  justify-content: space-between;
+   justify-content: space-between;
    padding: 0;
- }
+}
+.register a {
+   color: #000000;
+}
 .register li {
-   
    font-size: 21px;
    line-height: 21px;
-   width: 115px;
+   /*   width: 114px;*/
    display: flex;
-   
    justify-content: center;
-   
-   padding: 11px 10px;
-   
-
-   background-color: white;
-   
+   /*   padding: 11px 10px;*/
+   background-color: #ffffff;
 }
-
+.register a:focus, .register a:hover {
+   color: red;
+}
+.register a:active {
+   color: #000000;
+   opacity: 0.5;
+}
+.register-item {
+   padding: 10px 25px;
+}
+.come-icon {
+   width: 133px;
+   box-sizing: border-box;
+   padding-top: 11px;
+   box-sizing: border-box;
+   padding-left: 6px;
+}
 /*
 .login-main a:hover, .login-main a:focus {
    color: #ee3643;
@@ -298,24 +325,23 @@ input[type="search"]::placeholder {
 .name-login {
    display: block;
    width: 300px;
+   margin: 0;
+   margin-top: 0px;
 }
 .name-main {
-   
-   
-   
    font-size: 21px;
    line-height: 21px;
 }
 .exit-main {
    position: relative;
-   width: 300px;
+   width: 291px;
+   margin: 0;
    display: flex;
    justify-content: space-between;
-   padding: 15px 10px;
+   padding: 15px 4px;
    background-color: #ffffff;
 }
 .exit-main li {
-   
    padding-right: 10px;
    list-style: none;
 }
@@ -333,7 +359,6 @@ input[type="search"]::placeholder {
    left: 12px;
    background-image: url('../img/icon-user.svg');
 }
-
 .services-main a {
    color: #ffffff;
 }
@@ -343,7 +368,6 @@ input[type="search"]::placeholder {
 .services-item-main a {
    display: block;
    padding: 18px 28px 17px;
-
    font-size: 17px;
    line-height: 17px;
    font-weight: 400;
@@ -377,7 +401,6 @@ input[type="search"]::placeholder {
 }
 .services-main li {
    list-style: none;
-   
    padding: 0px 3px;
 }
 .service {
@@ -397,8 +420,8 @@ input[type="search"]::placeholder {
    list-style: none;
 }
 .services-item2 {
-   margin-top: -15px;
-   margin-left: -23px;
+   padding: 0;
+   margin-top: -12px;
    display: block;
    list-style: none;
 }
@@ -439,7 +462,6 @@ input[type="search"]::placeholder {
    position: relative;
    background-color: #ffbf47;
 }
-
 .items1::after {
    content: '';
    position: absolute;
@@ -451,12 +473,11 @@ input[type="search"]::placeholder {
    background-position: 0 0;
    background-image: url('../img/flag.png');
 }
-
 .items1::before {
    content: '';
    position: absolute;
-   top: 35px;
-   left: 194px;
+   top: 31px;
+   left: 213px;
    width: 52px;
    height: 80px;
    background-repeat: no-repeat;
@@ -485,8 +506,8 @@ input[type="search"]::placeholder {
 .items3::before {
    content: '';
    position: absolute;
-   top: 35px;
-   left: 194px;
+   top: 31px;
+   left: 190px;
    width: 79px;
    height: 80px;
    background-repeat: no-repeat;
@@ -494,6 +515,7 @@ input[type="search"]::placeholder {
    background-image: url('../img/icon-3.svg');
 }
 .items4 p {
+   margin-bottom: 21px;
    padding-top: 22px;
 }
 .items4 {
@@ -530,7 +552,6 @@ input[type="search"]::placeholder {
    background-image: url('../img/icon-5.svg');
 }
 .slider-items {
-   
    list-style: none;
    position: relative;
    width: 620px;
@@ -539,6 +560,7 @@ input[type="search"]::placeholder {
 .sliders {
    padding-left: 0px;
    margin: 0;
+   margin-left: -2px;
    margin-top: 10px;
 }
 .btn-slider {
@@ -619,7 +641,7 @@ input[type="search"]::placeholder {
    line-height: 18px;
 }
 .popular-item {
-   margin-bottom: 25px;
+   margin-bottom: 20px;
    display: flex;
    align-items: center;
    background-color: #f9f5f0;
@@ -641,12 +663,15 @@ input[type="search"]::placeholder {
    flex-wrap: wrap;
 }
 .popular-item2 {
-   margin-bottom: 25px;
+   margin-bottom: 20px;
    display: flex;
    align-items: center;
    background-color: #f9f5f0;
 }
 .popular2 {
+   margin: 0;
+   padding-top: 31px;
+   padding-bottom: 30px;
    padding-left: 25px;
    font-weight: 400;
    font-size: 30px;
@@ -655,9 +680,8 @@ input[type="search"]::placeholder {
    text-transform: uppercase;
 }
 .btn-item2 {
-   margin-top: -5px;
    margin-left: 271px;
-   padding: 10px 67px;
+   padding: 10px 69px;
    border: none;
    font: inherit;
    text-transform: uppercase;
@@ -691,13 +715,12 @@ input[type="search"]::placeholder {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 220px;
-   height: 145px;
+   width: 218px;
+   height: 144px;
    margin-bottom: 18px;
    border: 1px solid #eaeaea;
 }
 .brand-items:hover {
-    
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .brand-items:active {
@@ -705,7 +728,7 @@ input[type="search"]::placeholder {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .services-info-main {
-   padding-bottom: 37px;
+   padding-bottom: 52px;
    width: 400px;
    font-size: 13px;
    line-height: 24px;
@@ -720,7 +743,8 @@ input[type="search"]::placeholder {
    background-color: #f4f7f9;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 50px;
+   margin-bottom: 51px;
+   padding-bottom: 16px;
    padding-left: 10px;
    padding-right: 10px;
 }
@@ -737,7 +761,7 @@ input[type="search"]::placeholder {
 }
 .services {
    margin: 0;
-   padding-top: 64px;
+   padding-top: 68px;
    margin-bottom: 27px;
    font-size: 30px;
    line-height: 30px;
@@ -751,7 +775,7 @@ input[type="search"]::placeholder {
    line-height: 30px;
    align-items: flex-start;
    width: 240px;
-   padding: 23px 23px;
+   padding: 17px 22px;
    color: #ffffff;
    border: none;
    background-color: #32425c;
@@ -764,6 +788,7 @@ input[type="search"]::placeholder {
 }
 .delivery-wrapper {
    width: 290px;
+   margin-top: -16px;
    display: block;
 }
 .delivery {
@@ -791,7 +816,7 @@ input[type="search"]::placeholder {
    padding-right: 10px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 17px;
+   margin-bottom: 10px;
    display: flex;
    justify-content: space-between;
 }
@@ -814,7 +839,7 @@ input[type="search"]::placeholder {
    margin-bottom: 20px;
 }
 .company-item {
-   margin-bottom: 43px;
+   margin-bottom: 39px;
    font-size: 18px;
    line-height: 20px;
    list-style: none;
@@ -835,7 +860,7 @@ input[type="search"]::placeholder {
 .btn-company {
    width: 157px;
    display: flex;
-   padding: 11px 9px;
+   padding: 11px 31px;
    justify-content: center;
    border: none;
    font: inherit;
@@ -867,12 +892,12 @@ input[type="search"]::placeholder {
    margin-bottom: 29px;
 }
 .map-contact {
-   margin-bottom: 42px;
+   margin-bottom: 34px;
 }
 .btn-map {
    display: flex;
    width: 180px;
-   padding: 11px 58px;
+   padding: 10px 59px;
    border: none;
    font: inherit;
    text-transform: uppercase;
@@ -889,7 +914,7 @@ input[type="search"]::placeholder {
 }
 .logo-footer p {
    width: 328px;
-   margin-top: 45px;
+   margin-top: 28px;
    font-size: 18px;
    line-height: 24px;
    color: #f3f7f9;
@@ -934,7 +959,7 @@ input[type="search"]::placeholder {
    font-size: 18px;
    line-height: 24px;
    list-style: none;
-   margin-bottom: 28px;
+   margin-bottom: 33px;
 }
 .materials-footer a:hover, .materials-footer a:focus {
    text-decoration: underline;
@@ -960,7 +985,7 @@ input[type="search"]::placeholder {
    color: #ffd180;
 }
 .nav-footer {
-   width: 560px;
+   width: 590px;
    margin-left: 22px;
    margin-top: 20px;
    font-size: 18px;
@@ -1380,6 +1405,7 @@ input[type="search"]::placeholder {
    width: 940px;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 2px;
    padding-left: 10px;
    padding-right: 10px;
    display: flex;
@@ -1392,7 +1418,8 @@ input[type="search"]::placeholder {
    position: relative;
    display: inline-block;
    width: 218px;
-   margin-right: 17px;
+   margin-left: -10px;
+   margin-right: 15px;
    margin-bottom: 20px;
    line-height: 20px;
    font-weight: bold;
@@ -1418,7 +1445,23 @@ input[type="search"]::placeholder {
    overflow: hidden;
    z-index: 20;
 }
+/*
 .catalog-item .flag-new {
+   background: url('../img/flag.png') no-repeat;
+}
+*/
+
+.new-item {
+   position: relative;
+}
+.new-item::after {
+   content: '';
+   position: absolute;
+   width: 100px;
+   height: 59px;
+   top: -1px;
+   right: -41px;
+   z-index: 10;
    background: url('../img/flag.png') no-repeat;
 }
 .catalog-item .actions {
@@ -1466,7 +1509,7 @@ input[type="search"]::placeholder {
    color: #ffffff;
    font-size: 14px;
    font-weight: normal;
-   font-family: "Cuprum", Arial, sans-serif;
+   font-family: 'Cuprum', Arial, sans-serif;
    line-height: 18px;
    text-decoration: none;
    text-transform: uppercase;
@@ -1507,7 +1550,7 @@ input[type="search"]::placeholder {
    color: #ffffff;
    font-size: 14px;
    font-weight: normal;
-   font-family: "Cuprum", Arial, sans-serif;
+   font-family: 'Cuprum', Arial, sans-serif;
    line-height: 18px;
    text-decoration: none;
    text-transform: uppercase;
@@ -1546,9 +1589,9 @@ input[type="search"]::placeholder {
 }
 .catalog-item .title {
    min-height: 40px;
-   padding: 0 25px;
+   padding: 0 28px;
    margin-top: 10px;
-   margin-bottom: 15px;
+   margin-bottom: 11px;
    font-weight: 700;
 }
 .title {
@@ -1559,16 +1602,18 @@ input[type="search"]::placeholder {
 }
 .catalog-item .discount {
    min-height: 20px;
-   margin-top: 15px;
-   margin-bottom: 10px;
+   margin-top: 12px;
+   margin-bottom: 13px;
    color: #999;
    text-decoration: line-through;
 }
 .catalog-item .price {
    position: relative;
    width: 80px;
-   margin: 10px auto;
-   margin-bottom: 20px;
+   /*   margin: 10px auto;*/
+   margin-top: -6px;
+   margin-left: 41px;
+   margin-bottom: 18px;
    padding: 10px 30px;
    font-weight: bold;
    font-family: 'PT Sans', Arial, sans-serif;
