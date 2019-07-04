@@ -174,6 +174,7 @@ input[type='search']::placeholder {
 .info-main h1 {
    width: 300px;
    margin: 0;
+   flex-wrap: wrap;
    box-sizing: border-box;
    padding-top: 2px;
    padding-left: 51px;
@@ -546,6 +547,7 @@ input[type='search']::placeholder {
 .slider-controls label {
    position: absolute;
    display: inline-block;
+   vertical-align: top;
    width: 18px;
    top: 0;
    height: 18px;
@@ -664,10 +666,12 @@ input[type='search']::placeholder {
 .popular-item {
    margin-bottom: 23px;
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    background-color: #f9f5f0;
 }
 .popular {
+   flex-wrap: wrap;
    padding-left: 27px;
    padding-top: 1px;
    font-weight: 400;
@@ -684,6 +688,7 @@ input[type='search']::placeholder {
    flex-wrap: wrap;
 }
 .popular-item-2 {
+   flex-wrap: wrap;
    margin-bottom: 20px;
    display: flex;
    align-items: center;
@@ -1019,11 +1024,13 @@ input[type='search']::placeholder {
 .btn-map:active {
    background-color: #ba2732;
 }
+/*
 .logo-footer img {
    padding-top: 21px;
    width: 138px;
    height: 23px;
 }
+*/
 .logo-footer p {
    width: 328px;
    padding-left: 2px;
@@ -1037,7 +1044,8 @@ input[type='search']::placeholder {
    text-align: center;
    display: flex;
    width: 217px;
-   height: 61px;
+   padding: 20px 0px;
+/*   height: 61px;*/
    background-color: #ee3643;
    border-bottom: 5px solid #b52933;
 }
@@ -1231,6 +1239,7 @@ input[type='search']::placeholder {
 }
 .catalog-main {
    width: 940px;
+   flex-wrap: wrap;
    padding-left: 10px;
    padding-right: 10px;
    margin-left: auto;
@@ -1271,6 +1280,7 @@ input[type='search']::placeholder {
 }
 .catalog {
    margin: 0;
+   flex-wrap: wrap;
    margin-top: 18px;
    display: flex;
    padding-right: 10px;
@@ -1318,10 +1328,12 @@ input[type='search']::placeholder {
    margin-left: -2px;
    align-items: center;
    display: flex;
+   flex-wrap: wrap;
    border-radius: 3px;
    background-color: #f7f3ec;
 }
 .price-item {
+   flex-wrap: wrap;
    list-style: none;
    display: flex;
    padding-left: 91px;
@@ -1554,9 +1566,13 @@ input[type='search']::placeholder {
 }
 .modal {
    position: absolute;
+   display: none;
+}
+.modal-show {
+  display: block;
 }
 .modal-login {
-   display: none;
+   
    border-top: 7px solid #ee3643;
    top: 2520px;
    left: 50%;
@@ -1696,7 +1712,7 @@ input[type='search']::placeholder {
    transform: rotate(-45deg);
 }
 .modal-basket {
-   display: none;
+/*   display: none;*/
    top: 413px;
    left: 50%;
    margin-left: -313px;
@@ -1769,6 +1785,7 @@ input[type='search']::placeholder {
    position: relative;
    display: inline-block;
    width: 218px;
+   vertical-align: top;
    margin-left: -10px;
    margin-right: 12px;
    margin-bottom: 20px;
@@ -1781,6 +1798,7 @@ input[type='search']::placeholder {
    position: relative;
    display: inline-block;
    width: 218px;
+   vertical-align: top;
    margin-left: -1px;
    margin-right: 2px;
    margin-bottom: 20px;
@@ -2118,6 +2136,7 @@ input[type='search']::placeholder {
 .price-controls label {
    display: inline-block;
    width: 50%;
+   vertical-align: top;
    font-size: 16px;
    text-transform: uppercase;
 }
