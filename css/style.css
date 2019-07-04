@@ -255,6 +255,7 @@ input[type='search']::placeholder {
    opacity: 0.5;
 }
 .register-item {
+   height: 28px;
    padding: 10px 25px;
 }
 .register-item a {
@@ -262,8 +263,9 @@ input[type='search']::placeholder {
 }
 .come-icon {
    /*   width: 133px;*/
+   height: 48px;
    box-sizing: border-box;
-   padding-top: 11px;
+/*   padding-top: 11px;*/
    padding: 11px 23px;
    margin-left: 15px;
    padding-left: 6px;
