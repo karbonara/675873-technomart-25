@@ -616,7 +616,7 @@ input[type='search']::placeholder {
    right: 20px;
    width: 21px;
    height: 40px;
-   background-image: url(../img/icon-right.svg);
+   background-image: url('../img/icon-right.svg');
 }
 .slider-items::before {
    position: absolute;
@@ -628,7 +628,7 @@ input[type='search']::placeholder {
    -webkit-transform: rotate(-180deg);
    -ms-transform: rotate(-180deg);
    transform: rotate(-180deg);
-   background-image: url(../img/icon-right.svg);
+   background-image: url('../img/icon-right.svg');
 }
 .slider-controls label {
    position: absolute;
