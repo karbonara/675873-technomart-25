@@ -378,7 +378,7 @@ input[type='search']::placeholder {
    width: 20px;
    height: 18px;
    top: 12px;
-   left: 15px;
+   left: 12px;
    background-image: url('../img/icon-user.svg');
 }
 .services-main a {
@@ -1376,12 +1376,24 @@ input[type='search']::placeholder {
 }
 .login a {
    color: #32425c;
+   border-bottom: 1px solid #566275;
    font-family: 'Cuprum', sans-serif;
 }
 .login a:hover, .login a:focus {
    color: #ee3643;
 }
+.login::before {
+   content: '';
+   position: absolute;
+   width: 4px;
+   height: 4px;
+   top: 8px;
+   left: 106px;
+   border-radius: 50%;
+   background-color: #32425c;
+}
 .login {
+   position: relative;
    margin: 0;
    padding-left: 19px;
    display: -webkit-box;
@@ -1392,10 +1404,9 @@ input[type='search']::placeholder {
    line-height: 18px;
 }
 .login li {
-   padding-right: 30px;
-}
-.login a {
-   border-bottom: 1px solid #566275;
+   /*   padding-right: 30px;*/
+   margin-left: -3px;
+   margin-right: 35px;
 }
 .catalog-main {
    width: 940px;
